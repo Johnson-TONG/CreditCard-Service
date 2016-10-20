@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessRules\BusinessRules.cs" />
+    <Compile Include="BusinessRules\CanMakePaymentWithCard.cs" />
     <Compile Include="BusinessRules\IsCardNumberValid.cs" />
     <Compile Include="BusinessRules\IsValidPaymentAmount.cs" />
+    <Compile Include="DomainEntity\CreditCard.cs" />
     <Compile Include="IPaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
