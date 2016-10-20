@@ -1,1 +1,0 @@
-C:\Developer\VS2015\CreditCard-Service\UltraLazy.Domain\obj\Debug\UltraLazy.Domain.csprojResolveAssemblyReference.cache
