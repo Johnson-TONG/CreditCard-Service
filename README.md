@@ -9,9 +9,9 @@ There will showcases for 2 ways :
 # Description #
 The service requires 2 operations to be implemented:
 
-1. WhatsYourId: 008ab27c-36b2-43e5-91d5-edbd1e5b564b. This operation should return the unique ID provided by us to the user
-
-2. MakePayment: should validate the card and amount and return a Guid if successful and null if information is not valid.
+1. YourId: the Pin that is supply to you by the system like: 008ab27c-36b2-43e5-91d5-edbd1e5b564b. Before you can use this service  
+2. Your UserName and Password
+3. MakePayment: should validate the card and amount and return a Guid if successful and null if information is not valid.
 
 
 # Business rule #
