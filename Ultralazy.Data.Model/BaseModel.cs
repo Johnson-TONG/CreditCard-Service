@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Ultralazy.Data.Model
 {
     /// <summary>
-    /// Mark DataContract for class BaseModel & Id as Primarykey with autoincrement enabled
+    /// Mark System.Runtime.Serialization.DataContract.DataContract for class BaseModel & Id as Primarykey with autoincrement enabled
     /// </summary>
     [DataContract]
     public abstract class BaseModel : IModel

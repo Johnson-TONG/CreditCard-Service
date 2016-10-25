@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace UltraLazy.Domain.BusinessRules
@@ -16,13 +17,30 @@ namespace UltraLazy.Domain.BusinessRules
     /// </remarks>
     public class IsCardNumberValid : IBusinessRule
     {
+        private string _cardNumber;
+
+        // confirm only digital number and nothing else
+        private Regex regex = new Regex("^[0-9]+$", RegexOptions.Compiled);
+        const int creditCardLength = 16;
+
         public IsCardNumberValid(string cardNumber)
         {
-            throw new System.NotImplementedException();
+            _cardNumber = cardNumber;
         }
         public bool Validate()
         {
-            throw new System.NotImplementedException();
+            //don't use int.TryParse because '+' and '-' value is valid in tryparse method
+
+            return IsDigital() && IsSixteenDigits();
+        }
+
+        private bool IsDigital()
+        {
+            return regex.IsMatch(_cardNumber);
+        }
+        private bool IsSixteenDigits()
+        {
+            return _cardNumber.Length == creditCardLength;
         }
     }
 }

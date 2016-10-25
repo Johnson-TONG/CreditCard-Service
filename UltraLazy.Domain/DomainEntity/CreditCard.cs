@@ -9,6 +9,7 @@ namespace UltraLazy.Domain
         public string CardNumber { get; set; }
         /// <summary>
 		/// Represents payment amount between 99 cents and 99999999 cents
+        ///  1 to 1 million ( 1,000,000)
 		/// </summary>
         public long Amount { get; set; }
         /// <summary>
