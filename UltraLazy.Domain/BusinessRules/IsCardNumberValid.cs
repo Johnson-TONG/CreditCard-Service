@@ -84,7 +84,7 @@ namespace UltraLazy.Domain.BusinessRules
                 }
                 sumOfDigits += Digs[Position];
 
-                isAlternateDigit = true;
+                isAlternateDigit = !isAlternateDigit;
             }
             // take the number and mod 10
             return sumOfDigits  % 10 == 0;
